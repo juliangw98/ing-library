@@ -1,0 +1,101 @@
+          /* The side navigation menu */
+
+          .sidenav {
+              height: 100%;
+              /* 100% Full-height */
+              width: 0;
+              /* 0 width - change this with JavaScript */
+              position: fixed;
+              /* Stay in place */
+              z-index: 1;
+              /* Stay on top */
+              top: 55px;
+              /* Stay at the top */
+              left: 0;
+              background-color: white;
+              /* Black*/
+              overflow-x: hidden;
+              /* Disable horizontal scroll */
+              /* Place content 60px from the top */
+              transition: 0.5s;
+              /* 0.5 second transition effect to slide in the sidenav */
+          }
+
+          .sidenav li>a>figure>img {
+              height: 8px;
+              display: inline-block;
+              right: 20px;
+          }
+
+          .sidenav li>a>figure {
+              display: inline-block;
+              float: right;
+          }
+
+          .width {
+              width: 250px;
+          }
+
+          .hamburger-menuActive {
+              background-color: #FF6200
+;
+              color: white;
+          }
+          /* The navigation menu links */
+
+          .sidenav a {
+                       font-family: INGregular;
+              padding: 8px 8px 8px 32px;
+              text-decoration: none;
+              border-bottom: 1px solid #DDDDDD;
+              font-size: 16px;
+              color: #333333;
+              display: block;
+              transition: 0.3s;
+              font-size: 16px;
+              padding: 16px 25px;
+          }
+          /* When you mouse over the navigation links, change their color */
+
+          .sidenav a:hover {
+              color: #FF6200
+;
+          }
+
+          .sidenavActive {
+              font-family: INGbold!important;
+              color: black;
+              background-color: #F7F7F7;
+          }
+
+
+          .dropdown {
+              margin-top: 0px;
+              background-color: #F7F7F7;
+              font-size: 14px;
+              color: #333333;
+              border-bottom: 1px solid #DDDDDD;
+              display: none;
+            padding: 0px 0 0px 25px;
+              list-style-type: none;
+            font-family: INGregular;
+
+          }
+
+          .submenu>ul {
+              margin-top: 0px;
+              background-color: #F7F7F7;
+              font-size: 14px;
+              color: #333333;
+              border-bottom: 1px solid #DDDDDD;
+              padding: 0px 25px;
+              display: none;
+
+          }
+            .submenu li{
+           list-style-type: none;
+          }
+
+          .show {
+              display: block;
+          }

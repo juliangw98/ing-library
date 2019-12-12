@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>X-linQ</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="topbar">
+            <!-- hamburger-menu -->
+            <div id="hamburger-menu"><i class="fas fa-bars"></i></div>
+            <!-- put image in css -->
+            <figure><img /></figure>
+            <!-- user -->
+            <div class="personalData">
+                <div> <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> EN </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <!-- <a> linkjes van maken --><a class="dropdown-item" type="button">NL</a> <a class="dropdown-item" type="button">FR</a> <a class="dropdown-item" type="button">GER</a> </div>
+                </div>
+                <figure><img height="10px" src="images/Mask%20Group.svg" /> <span>viet</span></figure>
+            </div>
+        </div>
+        <ul id="sidebar-navigation" class="sidenav">
+          <li> <a href="page1.html">Basic</a> </li>
+          <li><a href="page2.html">Dropdown section</a> </li>
+          <li> <a href="page3.html">Tab menu 1</a></li>
+          <li><a href="page4.html">Tab menu 2</a></li>
+          <li><a href="page5.html">Tab menu 3</a> </li>
+          <li><a href="page6.html">Table</a></li>
+          <li><a href="page7.html">Checkboxes</a></li>
+          <li><a href="page8.html">Drag and drop</a></li>
+            <li class="open-dropdown">
+                <!-- twist == open-arrow --><a class="twist">
+                    dropdown <figure class="arrowdown"><img src="images/arrowDown.svg" /></figure>
+                </a>
+                <!-- remove classes and id's-->
+                <ul class="dropdown">
+                    <li><a href="#">Action1</a> </li>
+                    <li><a href="#">Action</a> </li>
+                    <li class=" submenu"> <a class=" twist" href="#">
+                            Something else here <figure class="arrowdown">
+                                <img height="10" src="images/arrowDown.svg" />
+                            </figure>
+                        </a>
+                        <ul>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Action</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="container">
+            <!-- replace with <header> -->
+            <header id="titleRow">
+                <div>
+                    <!-- remove random div -->
+                    <!-- classname = breadcrumbs -->
+                    <p class="breadcrumbs"><a>Buyer Funder Agreements </a>> Buyer Funder agreement Name</p>
+                    <!-- remove switch -->
+                    <h1 id="title">Multi Currency Account</h1>
+                </div>
+                <!-- class actions -->
+                <div class="actions">
+                  <!-- <a class="btn" >Safe services</a> -->
+
+                  <button type="button" name="button"  class="btn" disabled="disabled">save services</button>
+                </div>
+            </header>
+            <div class="flexrow">
+                <div class="column section padding">
+                    <h2>Select services</h2>
+                    <dl class="portlet">
+                        <dt class="portlet-header">Financial Service 1</dt>
+                        <dd class="portlet-content">subtitle</dd>
+                    </dl>
+                    <dl class="portlet">
+                        <dt class="portlet-header">Financial Service 1</dt>
+                        <dd class="portlet-content">subtitle</dd>
+                    </dl>
+                    <dl class="portlet"> <dt class="portlet-header">Financial Service 1</dt>
+                        <dd class="portlet-content">subtitle</dd>
+                    </dl>
+                    <dl class="portlet"> <dt class="portlet-header">Financial Service 1</dt>
+                        <dd class="portlet-content">subtitle</dd>
+                    </dl>
+                    <dl class="portlet"> <dt class="portlet-header">Financial Service 1</dt>
+                        <dd class="portlet-content">subtitle</dd>
+                    </dl>
+                    <dl class="portlet"> <dt class="portlet-header">Financial Service 1</dt>
+                        <dd class="portlet-content">subtitle</dd>
+                    </dl>
+                    <dl class="portlet"> <dt class="portlet-header">Financial Service 1</dt>
+                        <dd class="portlet-content">subtitle</dd>
+                    </dl>
+                    <dl class="portlet"> <dt class="portlet-header">Financial Service 1</dt>
+                        <dd class="portlet-content">subtitle</dd>
+                    </dl>
+                </div>
+                <div id="dropzone" class="padding">
+                    <h2>Your services</h2>
+                    <div id="drop" class="column"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                $(".column").sortable({
+                    connectWith: ".column",
+                    handle: ".portlet-header",
+                    cancel: ".portlet-toggle",
+                    placeholder: "portlet-placeholder ui-corner-all"
+                });
+                $(".portlet").addClass("ui-widget ui-widget-content ui-helper-clearfix ui-corner-all").find(".portlet-header").addClass("ui-widget-header ui-corner-all");
+            });
+
+        </script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+        <script src="javascript.js">
+        </script>
+    </body>
+
+</html>
